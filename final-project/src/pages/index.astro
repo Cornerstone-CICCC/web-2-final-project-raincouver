@@ -3,5 +3,72 @@ import BaseLayput from "../layouts/BaseLayput.astro";
 ---
 
 <BaseLayput>
-<h1>Hello Raincouver!</h1>
+  <div class="main-visual-wrapper">
+    <div class="main-viusal-text">
+      <h3>
+        A Clean Home,<br />
+        A Happy Life,<br />
+        Let Us Handle the Dirty Work!
+      </h3>
+      <p>
+        We develop innovative design solutions that enable our clients to
+        enhance their competitive advantage.
+      </p>
+      <div class="main-visual-link">
+        <a href="" class="main-visual-link-quote">Request A Quote</a>
+        <a href="" class="main-visual-link-learn">Learn More</a>
+      </div>
+    </div>
+    <div class="main-visual-img">
+      <img src="/images/home/main-visual.png" alt="Main Visual" />
+    </div>
+  </div>
 </BaseLayput>
+<style>
+  .main-visual-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-visual-text {
+    width: 100%;
+  }
+
+  .main-visual-text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .main-visual-text p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .main-visual-link a {
+    text-decoration: none;
+    padding: 12px 24px;
+    gap: 8px;
+  }
+
+  .main-visual-link-quote {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  .main-visual-link-learn {
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+
+  .main-visual-img {
+    display: block;
+    width: 100%;
+  }
+
+  .main-visual-img img {
+    max-width: 100%;
+  }
+</style>
