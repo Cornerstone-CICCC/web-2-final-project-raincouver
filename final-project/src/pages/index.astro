@@ -4,19 +4,21 @@ import BaseLayput from "../layouts/BaseLayput.astro";
 
 <BaseLayput>
   <div class="main-visual-wrapper">
-    <div class="main-viusal-text">
-      <h3>
-        A Clean Home,<br />
-        A Happy Life,<br />
-        Let Us Handle the Dirty Work!
-      </h3>
-      <p>
-        We develop innovative design solutions that enable our clients to
-        enhance their competitive advantage.
-      </p>
-      <div class="main-visual-link">
-        <a href="" class="main-visual-link-quote">Request A Quote</a>
-        <a href="" class="main-visual-link-learn">Learn More</a>
+    <div class="main-visual-text">
+      <div class="main-visual-text-inner">
+        <h3>
+          A Clean Home,<br />
+          A Happy Life,<br />
+          Let Us Handle the Dirty Work!
+        </h3>
+        <p>
+          We develop innovative design solutions that enable our clients to
+          enhance their competitive advantage.
+        </p>
+        <div class="main-visual-link">
+          <a href="" class="main-visual-link-quote">Request A Quote</a>
+          <a href="" class="main-visual-link-learn">Learn More</a>
+        </div>
       </div>
     </div>
     <div class="main-visual-img">
@@ -24,28 +26,39 @@ import BaseLayput from "../layouts/BaseLayput.astro";
     </div>
   </div>
 </BaseLayput>
+
 <style>
   .main-visual-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .main-visual-text {
     width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 
   .main-visual-text h3 {
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
+    margin-top: 0;
+    margin-bottom: 20px;
   }
 
   .main-visual-text p {
     font-size: 18px;
     line-height: 27px;
+    margin-bottom: 24px;
   }
 
   .main-visual-link a {
+    display: inline-block;
+    font-size: 16px;
     text-decoration: none;
     padding: 12px 24px;
     gap: 8px;
@@ -70,5 +83,16 @@ import BaseLayput from "../layouts/BaseLayput.astro";
 
   .main-visual-img img {
     max-width: 100%;
+  }
+
+  @media screen and (min-width: 640px) {
+    .main-visual-wrapper {
+      flex-direction: row;
+    }
+
+    .main-visual-text-inner {
+      margin-left: 2.5rem;
+      margin-right: 1.5rem;
+    }
   }
 </style>
