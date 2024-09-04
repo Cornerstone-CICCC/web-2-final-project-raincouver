@@ -33,10 +33,16 @@ import BaseLayput from "../layouts/BaseLayput.astro";
     <div class="our-team-content-wrapper">
       <div class="our-team-content">
         <div class="our-team-content-img">
-          <img
-            src="/images/home/our-team-mobile/member1-sp.png"
-            alt="Leslie Alexander"
-          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/images/home/our-team-desktop/member1-pc.png"
+            />
+            <img
+              src="/images/home/our-team-mobile/member1-sp.png"
+              alt="Leslie Alexander"
+            />
+          </picture>
         </div>
         <div class="our-team-content-text">
           <p class="name">Leslie Alexander</p>
@@ -49,10 +55,16 @@ import BaseLayput from "../layouts/BaseLayput.astro";
       </div>
       <div class="our-team-content">
         <div class="our-team-content-img">
-          <img
-            src="/images/home/our-team-mobile/member2-sp.png"
-            alt="Ralph Edwards"
-          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/images/home/our-team-desktop/member2-pc.png"
+            />
+            <img
+              src="/images/home/our-team-mobile/member2-sp.png"
+              alt="Ralph Edwards"
+            />
+          </picture>
         </div>
         <div class="our-team-content-text">
           <p class="name">Ralph Edwards</p>
@@ -65,10 +77,16 @@ import BaseLayput from "../layouts/BaseLayput.astro";
       </div>
       <div class="our-team-content">
         <div class="our-team-content-img">
-          <img
-            src="/images/home/our-team-mobile/member3-sp.png"
-            alt="Annette Black"
-          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/images/home/our-team-desktop/member3-pc.png"
+            />
+            <img
+              src="/images/home/our-team-mobile/member3-sp.png"
+              alt="Annette Black"
+            />
+          </picture>
         </div>
         <div class="our-team-content-text">
           <p class="name">Annette Black</p>
@@ -81,10 +99,16 @@ import BaseLayput from "../layouts/BaseLayput.astro";
       </div>
       <div class="our-team-content">
         <div class="our-team-content-img">
-          <img
-            src="/images/home/our-team-mobile/member4-sp.png"
-            alt="Savannah Nguyen"
-          />
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="/images/home/our-team-desktop/member4-pc.png"
+            />
+            <img
+              src="/images/home/our-team-mobile/member4-sp.png"
+              alt="Savannah Nguyen"
+            />
+          </picture>
         </div>
         <div class="our-team-content-text">
           <p class="name">Savannah Nguyen</p>
@@ -172,6 +196,11 @@ import BaseLayput from "../layouts/BaseLayput.astro";
     font-size: 18px;
   }
 
+  .our-team-content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   .our-team-content {
     margin-top: 32px;
   }
@@ -189,7 +218,7 @@ import BaseLayput from "../layouts/BaseLayput.astro";
     margin-top: 20px;
   }
 
-  .our-team-content-text .text-content {
+  .text-content {
     width: 85%;
     margin: 0 auto 20px;
     font-size: 16px;
@@ -205,6 +234,37 @@ import BaseLayput from "../layouts/BaseLayput.astro";
     .main-visual-text-inner {
       margin-left: 2.5rem;
       margin-right: 1.5rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    /* our team */
+    .our-team-content-wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .our-team-content {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 48px;
+    }
+
+    .our-team-content-img {
+      width: 44%;
+    }
+
+    .our-team-content-text {
+      width: 56%;
+      text-align: left;
+      padding-left: 1.5rem;
+    }
+
+    .text-content {
+      margin-left: 0;
+      margin-right: auto;
     }
   }
 </style>
