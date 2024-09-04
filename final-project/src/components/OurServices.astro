@@ -209,7 +209,12 @@
     const secondList = document.querySelector(".services-second")
 
     button.addEventListener('click',()=>{
-        secondList.style.display = 'flex'
-        secondList.style.gap = '64px';
+   if (secondList.classList.contains('services-respnsive')) {
+        secondList.classList.remove('services-respnsive');
+        button.textContent = 'View All';
+      } else {
+        secondList.classList.add('services-respnsive');
+        button.textContent = 'Show Less';
+      }
     })
 </script>
