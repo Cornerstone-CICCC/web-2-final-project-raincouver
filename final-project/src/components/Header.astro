@@ -1,1 +1,231 @@
-<header>Header</header>
+<header>
+    <div class="top-header">
+        <div class="info">
+            <span class="emergency"><strong> For emergency cases: +567 123 45 67</strong></span> | 
+            <span class="location">Location: 121 Wallstreet Street,NY,USA</span> | 
+            <span class="hours">Open hours: 9:00-24:00 Mon-Sat</span> | 
+            <span class="email">Email: info@ddsgnr.com</span> | 
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="/images/header/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="/images/header/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/images/header/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="/images/header/linkedin.png" alt="Linkedin"></a>
+        </div>
+    </div>
+    <div class="bottom-header">
+        <div class="logo">
+            <img src="/images/header/logoDdsgnr.png" alt="Company Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="quote-button" href="#request-quote">Request a Quote</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#teams">Teams</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="quote-button" href="#request-quote">Request a Quote</a></li>
+        </ul>
+    </nav>
+</header>
+<style>
+    header {
+    width: 100%;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.top-header {
+    background-color:white;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-header .info {
+    display: flex;
+    align-items: center;
+}
+
+.top-header .info span {
+    margin: 0 10px;
+}
+
+.top-header .social-icons img {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+.top-header .social-icons a:first-of-type img {
+    width: 8px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+
+.top-header .social-icons{
+    margin-right: 20px;
+}
+
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+.bottom-header .logo img {
+    height: 30px;
+}
+
+.bottom-header .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.bottom-header .main-nav ul li {
+    margin: 0 15px;
+}
+
+.bottom-header .main-nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.bottom-header .main-nav ul li:last-of-type a {
+    color: white;
+    text-decoration: none;
+}
+
+.bottom-header .quote-button{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+.mobile-nav ul li {
+    margin: 0;
+}
+
+.mobile-nav ul li a {
+    padding: 15px 20px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.mobile-nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 640px) {
+    .top-header, .main-nav {
+        display: none;
+    }
+
+    .bottom-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .mobile-nav.active {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-header, .main-nav {
+        display: none;
+    }
+
+    .bottom-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .mobile-nav.active {
+        display: block;
+    }
+}
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.querySelector('.mobile-nav');
+
+        hamburger.addEventListener('click', function() {
+            mobileNav.classList.toggle('active');
+        });
+    });
+</script>

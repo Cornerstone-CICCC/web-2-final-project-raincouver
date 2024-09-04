@@ -1,0 +1,250 @@
+<section class="service-main">
+    <div class="services-description">
+        <h2>Our Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </div>
+    <div class="services-first">
+        <div class="service">
+            <div class="service-image">
+                <img src="../../public/images/our-services/bedroom.png" alt="the image of bedroom">
+            </div>
+            <div class="service-details">
+                <div class="service-detail">
+                    <h3>One Bedroom Apartment</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                </div>
+            </div>
+        </div>
+          <div class="service">
+            <div class="service-image">
+                <img src="../../public/images/our-services/window-cleaning.png" alt="the image of window cleaning">
+            </div>
+            <div class="service-details">
+                <div class="service-detail">
+                    <h3>Window Cleaning</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                </div>
+            </div>
+        </div>
+          <div class="service">
+            <div class="service-image">
+                <img src="../../public/images/our-services/residential-cleaning.png" alt="the image of residential cleaning">
+            </div>
+            <div class="service-details">
+                <div class="service-detail">
+                    <h3>Residential Cleaning</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="services-second">
+        <div class="service">
+            <div class="service-image">
+                <img src="../../public/images/our-services/construction-cleaning.png" alt="the image of construction cleaning">
+            </div>
+            <div class="service-details">
+                <div class="service-detail">
+                    <h3>Construction Cleaning</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                </div>
+            </div>
+        </div>
+          <div class="service">
+            <div class="service-image">
+                <img src="../../public/images/our-services/commercial-cleaning.png" alt="the image of commercial cleaning">
+            </div>
+            <div class="service-details">
+                <div class="service-detail">
+                    <h3>Commercial Cleaning</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                </div>
+            </div>
+        </div>
+          <div class="service">
+            <div class="service-image">
+                <img src="../../public/images/our-services/two-bedroom-apartment.png" alt="the image of two bedroom apartment">
+            </div>
+            <div class="service-details">
+                <div class="service-detail">
+                    <h3>Two Bedroom Apartment</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn-view-all">View all</button>
+</section>
+
+<style>
+  .service-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 24px;
+    background-color: #F7F7F7;
+  }
+
+  .services-first {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+  .services-first > .service:nth-of-type(1)
+  , .services-second>.service:nth-of-type(1) {
+    margin-top: 64px;
+  }
+
+  .services-second {
+    display: none;
+  }
+
+  .services-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-description h2 {
+    margin: 0 0 32px 0;
+    font-size: 32px;
+  }
+
+  .services-description p {
+    width: 400px;
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    line-height: 27px;
+  }
+
+  .service {
+    max-width: 380px;
+    width: 100%;
+    border-radius: 5px;
+    border: 0.5px solid #676767;
+  }
+
+  .service-image {
+    width: 100%;
+  }
+
+  .service-image img {
+    width: 100%;
+  }
+
+  .service-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 20px;
+  }
+
+  .service-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .service-detail h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .service-detail p {
+    margin: 0;
+    line-height: 24px;
+    max-width: 333px;
+    text-align: center;
+  }
+
+  .btn-view-all {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    padding: 12px 24px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    margin-top: 24px;
+  }
+
+  .services-respnsive{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+
+@media screen and (min-width: 912px) {
+  .service-detail h3 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .service-detail p {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .service-main {
+    padding: 112px 20px;
+  }
+
+  .services-description h2 {
+    max-width: 768px;
+    font-size: 48px;
+  }
+
+  .services-description p {
+    max-width: 768px;
+    width: auto;
+  }
+
+  .service-details {
+    margin: 2rem 20px;
+  }
+
+  .service-detail h3 {
+    font-size: 20px;
+  }
+
+  .service-detail p {
+    text-align: left;
+  }
+
+  .btn-view-all {
+    display: none;
+  }
+  .services-first, 
+  .services-second {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-top: 64px;
+  }
+  
+  .services-first > .service:nth-of-type(1),
+  .services-second > .service:nth-of-type(1) {
+    margin-top: 0px;
+  }
+}
+</style>
+
+<script>
+    const button = document.querySelector(".btn-view-all")
+    const secondList = document.querySelector(".services-second")
+
+    button.addEventListener('click',()=>{
+   if (secondList.classList.contains('services-respnsive')) {
+        secondList.classList.remove('services-respnsive');
+        button.textContent = 'View All';
+      } else {
+        secondList.classList.add('services-respnsive');
+        button.textContent = 'Show Less';
+      }
+    })
+</script>
