@@ -178,8 +178,6 @@
     gap: 64px;
   }
 
-
-
 @media screen and (min-width: 912px) {
   .service-detail h3 {
     text-align: center;
@@ -223,16 +221,15 @@
   }
   .services-first, 
   .services-second {
+    display: flex;
     flex-direction: row;
     gap: 32px;
     margin-top: 64px;
   }
   
-  .services-first > .service:nth-of-type(1) {
+  .services-first > .service:nth-of-type(1),
+  .services-second > .service:nth-of-type(1) {
     margin-top: 0px;
-  }
-  .services-second {
-    display: flex;
   }
 }
 </style>
