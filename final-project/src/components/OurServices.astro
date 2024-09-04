@@ -91,7 +91,8 @@
     gap: 64px;
   }
 
-  .services-first > .service:nth-of-type(1) {
+  .services-first > .service:nth-of-type(1)
+  , .services-second>.service:nth-of-type(1) {
     margin-top: 64px;
   }
 
@@ -131,7 +132,6 @@
 
   .service-image img {
     width: 100%;
-    object-fit: fill;
   }
 
   .service-details {
@@ -178,9 +178,7 @@
     gap: 64px;
   }
 
-  .services-second>.service:nth-of-type(1){
-     margin-top: 64px; 
-  }
+
 
 @media screen and (min-width: 912px) {
   .service-detail h3 {
