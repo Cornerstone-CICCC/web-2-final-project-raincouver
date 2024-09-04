@@ -25,9 +25,82 @@ import BaseLayput from "../layouts/BaseLayput.astro";
       <img src="/images/home/main-visual.png" alt="Main Visual" />
     </div>
   </div>
+  <div class="our-team-wrapper">
+    <h2>Our Team</h2>
+    <p class="our-team-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <div class="our-team-content-wrapper">
+      <div class="our-team-content">
+        <div class="our-team-content-img">
+          <img
+            src="/images/home/our-team-mobile/member1-sp.png"
+            alt="Leslie Alexander"
+          />
+        </div>
+        <div class="our-team-content-text">
+          <p class="name">Leslie Alexander</p>
+          <p class="text-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+          <img src="/images/home/social-icons.png" alt="Social Icons" />
+        </div>
+      </div>
+      <div class="our-team-content">
+        <div class="our-team-content-img">
+          <img
+            src="/images/home/our-team-mobile/member2-sp.png"
+            alt="Ralph Edwards"
+          />
+        </div>
+        <div class="our-team-content-text">
+          <p class="name">Ralph Edwards</p>
+          <p class="text-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+          <img src="/images/home/social-icons.png" alt="Social Icons" />
+        </div>
+      </div>
+      <div class="our-team-content">
+        <div class="our-team-content-img">
+          <img
+            src="/images/home/our-team-mobile/member3-sp.png"
+            alt="Annette Black"
+          />
+        </div>
+        <div class="our-team-content-text">
+          <p class="name">Annette Black</p>
+          <p class="text-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+          <img src="/images/home/social-icons.png" alt="Social Icons" />
+        </div>
+      </div>
+      <div class="our-team-content">
+        <div class="our-team-content-img">
+          <img
+            src="/images/home/our-team-mobile/member4-sp.png"
+            alt="Savannah Nguyen"
+          />
+        </div>
+        <div class="our-team-content-text">
+          <p class="name">Savannah Nguyen</p>
+          <p class="text-content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+          <img src="/images/home/social-icons.png" alt="Social Icons" />
+        </div>
+      </div>
+    </div>
+  </div>
 </BaseLayput>
 
 <style>
+  /* main visaul */
   .main-visual-wrapper {
     display: flex;
     flex-direction: column;
@@ -85,7 +158,46 @@ import BaseLayput from "../layouts/BaseLayput.astro";
     max-width: 100%;
   }
 
+  /* our team */
+  .our-team-wrapper {
+    text-align: center;
+  }
+
+  .our-team-wrapper h2 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .our-team-text {
+    font-size: 18px;
+  }
+
+  .our-team-content {
+    margin-top: 32px;
+  }
+
+  .our-team-content-img img {
+    width: 100%;
+  }
+
+  /* .our-team-content-text{
+    padding-bottom: ;
+  } */
+  .our-team-content-text .name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  .our-team-content-text .text-content {
+    width: 85%;
+    margin: 0 auto 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   @media screen and (min-width: 640px) {
+    /* main visual */
     .main-visual-wrapper {
       flex-direction: row;
     }
