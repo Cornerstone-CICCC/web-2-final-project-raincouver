@@ -32,26 +32,3 @@ body{
 }
 </style>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-    emailjs.init("d6yRYWD_ovndPFsZp");
-
-    document.getElementById('newsletter-form').addEventListener('submit', function(event) {
-        event.preventDefault(); 
-
-        var email = document.getElementById('email').value;
-
-        emailjs.send('service_xcqy23m', 'template_tt8uadc', {
-            to_email: email 
-        })
-        .then(function(response) {
-            console.log('Success:', response);
-            alert('Thank you for subscribing!'); 
-        }, function(error) {
-            console.log('Error:', error);
-            alert('Something went wrong. Please try again.'); 
-        });
-    });
-});
-</script>
-
