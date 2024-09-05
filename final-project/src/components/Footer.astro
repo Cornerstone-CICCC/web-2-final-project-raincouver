@@ -1,1 +1,404 @@
-<footer>Footer</footer>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section logo-section">
+            <img src="images/footer/logoDdsgnr.png" alt="Logo" class="footer-logo">
+            <p>Join our newsletter to stay up to date on features and releases.</p>
+            <form class="newsletter-form " id="newsletter-form">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p class="privacy-note">By subscribing you agree to our <a href="#">Privacy Policy</a> and provide consent to receive updates from our company.</p>
+        </div>
+    
+            <div class="footer-section links-section">
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section links-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Window</a></li>
+                    <li><a href="#">Residential</a></li>
+                    <li><a href="#">Commercial</a></li>
+                    <li><a href="#">Apartment</a></li>
+                    <li><a href="#">Residential</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section social-section">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><img src="images/footer/facebook.png" alt="Facebook"><p>Facebook</p></li>
+                    <li><img src="images/footer/instagram.png" alt="Instagram"><p>Instagram</p></li>
+                    <li><img src="images/footer/twitter.png" alt="Twitter"><p>Twitter</p></li>
+                    <li><img src="images/footer/linkedin.png" alt="LinkedIn"><p>LinkedIn</p></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+
+        <div class="links-mobile">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+            <div class="social-mobile">
+            <a href="#"><img src="images/footer/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="images/footer/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="images/footer/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/footer/linkedin.png" alt="Linkedin"></a>
+            <br class="good-br">
+            <br class="good-br">
+            <hr class="good-hr">
+        </div>
+            </div>
+    
+        <div class="footer-bottom">
+            <p>2023 Ddsgrn. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies Settings</a>
+            </div>
+        </div>
+    </footer>
+
+<style>
+footer {
+    background-color: white;
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 10px 60px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin-left:160px;
+    min-width: 5%;
+    flex-basis: 8%; 
+}
+
+.logo-section {
+    flex-basis: 35%;
+    margin-left: 0px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 20px;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.privacy-note {
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.privacy-note a{
+   text-decoration: underline;
+   color: #000;
+}
+
+.footer-section h4 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 20px;
+    display: flex
+}
+
+.footer-section ul li img {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+}
+
+.footer-section ul li:first-of-type img {
+    width: 8px;
+    height: 15px;
+}
+
+.footer-section ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-section h4 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.social-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-section ul li {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 0px;
+}
+
+.social-section ul li img {
+    margin-right: 10px; 
+}
+
+.footer-bottom {
+    padding: 20px 60px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-size: 14px;
+    color: #555;
+}
+
+.footer-bottom p {
+    margin: 0; 
+}
+
+.footer-links {
+    display: flex; 
+}
+
+.footer-links a {
+    margin-left: 20px; 
+    color: #000;
+    text-decoration: underline;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.links-mobile{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .footer-bottom .footer-links {
+        margin-top: 10px;
+    }
+
+    .footer-bottom p {
+        margin-bottom: 10px;
+    }
+
+    .links-mobile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        align-items: center; 
+        justify-content: center; 
+        overflow-x: auto;
+        white-space: nowrap;
+        text-align: center;
+    }
+    
+    .links-mobile li {
+        list-style: none;
+        margin: 0 10px; 
+        display: inline; 
+    }
+    
+    .links-mobile a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black; 
+    }
+    
+    .links-mobile a:hover {
+        color: gray; 
+    }
+    
+    .logo-section {
+        text-align: center;
+    }
+    
+    .logo-section img {
+        width: 100%; 
+        height: auto; 
+        display: inline-block; 
+    }
+
+    .links-section,.newsletter-form,.logo-section p,.social-section,hr,br {
+        display: none;
+    }
+    .links-mobile,.good-hr,.good-br{
+        display: block;
+    }
+    
+    .social-mobile{
+        margin-top:30px;
+    }
+
+    .social-mobile img{
+            width: 15px;
+            height: 15px;
+            margin-left: 15px;
+        }
+        
+        .social-mobile a:first-of-type img{
+            width: 8px;
+            height: 15px;
+            margin-left: 15px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .footer-bottom {
+            flex-direction: column; 
+            text-align: center; 
+        }
+    
+        .footer-bottom .footer-links {
+            margin-top: 10px;
+        }
+    
+        .footer-bottom p {
+            margin-bottom: 10px;
+        }
+    
+        .links-mobile {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap; 
+            align-items: center; 
+            justify-content: center; 
+            overflow-x: auto;
+            white-space: nowrap;
+            text-align: center;
+        }
+        
+        .links-mobile li {
+            list-style: none;
+            margin: 0 10px; 
+            display: inline; 
+        }
+        
+        .links-mobile a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black; 
+        }
+        
+        .links-mobile a:hover {
+            color: gray; 
+        }
+        
+        .logo-section {
+            text-align: center;
+        }
+        
+        .logo-section img {
+            width: 100%; 
+            height: auto; 
+            display: inline-block; 
+        }
+    
+        .links-section,.newsletter-form,.logo-section p,.social-section,hr,br {
+            display: none;
+        }
+        .links-mobile,.good-hr,.good-br{
+            display: block;
+        }
+        
+        .social-mobile{
+            margin-top:30px;
+        }
+    
+        .social-mobile img{
+                width: 15px;
+                height: 15px;
+                margin-left: 15px;
+            }
+            
+            .social-mobile a:first-of-type img{
+                width: 8px;
+                height: 15px;
+                margin-left: 15px;
+            }
+        }
+    </style>
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+     document.addEventListener('DOMContentLoaded', function() {
+    emailjs.init("d6yRYWD_ovndPFsZp");
+
+    document.getElementById('newsletter-form').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+
+        var email = document.getElementById('email').value;
+
+        emailjs.send('service_xcqy23m', 'template_tt8uadc', {
+            to_email: email 
+        })
+        .then(function(response) {
+            console.log('Success:', response);
+            alert('Thank you for subscribing!'); 
+        }, function(error) {
+            console.log('Error:', error);
+            alert('Something went wrong. Please try again.'); 
+        });
+    });
+});
+</script>
