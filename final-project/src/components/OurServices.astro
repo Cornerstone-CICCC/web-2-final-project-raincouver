@@ -1,4 +1,5 @@
 <section class="service-main">
+  <div class="service-container">
     <div class="services-description">
         <h2>Our Services</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
@@ -74,15 +75,20 @@
         </div>
     </div>
     <button class="btn-view-all">View all</button>
+  </div>
 </section>
 
 <style>
-  .service-main {
+  .service-main {background-color: #F7F7F7;
+  }
+
+  .service-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
     padding: 48px 24px;
-    background-color: #F7F7F7;
   }
 
   .services-first {

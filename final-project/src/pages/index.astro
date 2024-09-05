@@ -3,144 +3,147 @@ import BaseLayput from "../layouts/BaseLayput.astro";
 ---
 
 <BaseLayput>
-  <div class="main-visual-wrapper">
-    <div class="main-visual-text">
-      <div class="main-visual-text-inner">
-        <h3>
-          A Clean Home,<br />
-          A Happy Life,<br />
-          Let Us Handle the Dirty Work!
-        </h3>
-        <p>
-          We develop innovative design solutions that enable our clients to
-          enhance their competitive advantage.
-        </p>
-        <div class="main-visual-link">
-          <a href="" class="main-visual-link-quote">Request A Quote</a>
-          <a href="" class="main-visual-link-learn">Learn More</a>
+  <div class="main-visual-container">
+    <div class="main-visual-wrapper">
+      <div class="main-visual-text">
+        <div class="main-visual-text-inner">
+          <h3>
+            A Clean Home,<br />
+            A Happy Life,<br />
+            Let Us Handle the Dirty Work!
+          </h3>
+          <p>
+            We develop innovative design solutions that enable our clients to
+            enhance their competitive advantage.
+          </p>
+          <div class="main-visual-link">
+            <a href="" class="main-visual-link-quote">Request A Quote</a>
+            <a href="/ourservices" class="main-visual-link-learn">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-visual-img">
+        <img src="/images/home/main-visual.png" alt="Main Visual" />
+      </div>
+    </div>
+    <div class="our-team-wrapper" id="our-team">
+      <h2>Our Team</h2>
+      <p class="our-team-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <div class="our-team-content-wrapper">
+        <div class="our-team-content">
+          <div class="our-team-content-img">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="/images/home/our-team-desktop/member1-pc.png"
+              />
+              <img
+                src="/images/home/our-team-mobile/member1-sp.png"
+                alt="Leslie Alexander"
+              />
+            </picture>
+          </div>
+          <div class="our-team-content-text">
+            <p class="name">Leslie Alexander</p>
+            <p class="text-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              varius enim in eros elementum tristique.
+            </p>
+            <img src="/images/home/social-icons.png" alt="Social Icons" />
+          </div>
+        </div>
+        <div class="our-team-content">
+          <div class="our-team-content-img">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="/images/home/our-team-desktop/member2-pc.png"
+              />
+              <img
+                src="/images/home/our-team-mobile/member2-sp.png"
+                alt="Ralph Edwards"
+              />
+            </picture>
+          </div>
+          <div class="our-team-content-text">
+            <p class="name">Ralph Edwards</p>
+            <p class="text-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              varius enim in eros elementum tristique.
+            </p>
+            <img src="/images/home/social-icons.png" alt="Social Icons" />
+          </div>
+        </div>
+        <div class="our-team-content">
+          <div class="our-team-content-img">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="/images/home/our-team-desktop/member3-pc.png"
+              />
+              <img
+                src="/images/home/our-team-mobile/member3-sp.png"
+                alt="Annette Black"
+              />
+            </picture>
+          </div>
+          <div class="our-team-content-text">
+            <p class="name">Annette Black</p>
+            <p class="text-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              varius enim in eros elementum tristique.
+            </p>
+            <img src="/images/home/social-icons.png" alt="Social Icons" />
+          </div>
+        </div>
+        <div class="our-team-content">
+          <div class="our-team-content-img">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="/images/home/our-team-desktop/member4-pc.png"
+              />
+              <img
+                src="/images/home/our-team-mobile/member4-sp.png"
+                alt="Savannah Nguyen"
+              />
+            </picture>
+          </div>
+          <div class="our-team-content-text">
+            <p class="name">Savannah Nguyen</p>
+            <p class="text-content">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              varius enim in eros elementum tristique.
+            </p>
+            <img src="/images/home/social-icons.png" alt="Social Icons" />
+          </div>
         </div>
       </div>
     </div>
-    <div class="main-visual-img">
-      <img src="/images/home/main-visual.png" alt="Main Visual" />
+    <div class="subscribe-wrapper">
+      <h2>Subscribe to our newsletter</h2>
+      <p class="subscribe-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <form id="subscribe-form">
+        <input type="text" name="email" />
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="subscribe-text-end">
+        By clicking Sign Up you're confirming that you agree with our Terms and
+        Conditions.
+      </p>
     </div>
-  </div>
-  <div class="our-team-wrapper">
-    <h2>Our Team</h2>
-    <p class="our-team-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </p>
-    <div class="our-team-content-wrapper">
-      <div class="our-team-content">
-        <div class="our-team-content-img">
-          <picture>
-            <source
-              media="(min-width: 768px)"
-              srcset="/images/home/our-team-desktop/member1-pc.png"
-            />
-            <img
-              src="/images/home/our-team-mobile/member1-sp.png"
-              alt="Leslie Alexander"
-            />
-          </picture>
-        </div>
-        <div class="our-team-content-text">
-          <p class="name">Leslie Alexander</p>
-          <p class="text-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique.
-          </p>
-          <img src="/images/home/social-icons.png" alt="Social Icons" />
-        </div>
-      </div>
-      <div class="our-team-content">
-        <div class="our-team-content-img">
-          <picture>
-            <source
-              media="(min-width: 768px)"
-              srcset="/images/home/our-team-desktop/member2-pc.png"
-            />
-            <img
-              src="/images/home/our-team-mobile/member2-sp.png"
-              alt="Ralph Edwards"
-            />
-          </picture>
-        </div>
-        <div class="our-team-content-text">
-          <p class="name">Ralph Edwards</p>
-          <p class="text-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique.
-          </p>
-          <img src="/images/home/social-icons.png" alt="Social Icons" />
-        </div>
-      </div>
-      <div class="our-team-content">
-        <div class="our-team-content-img">
-          <picture>
-            <source
-              media="(min-width: 768px)"
-              srcset="/images/home/our-team-desktop/member3-pc.png"
-            />
-            <img
-              src="/images/home/our-team-mobile/member3-sp.png"
-              alt="Annette Black"
-            />
-          </picture>
-        </div>
-        <div class="our-team-content-text">
-          <p class="name">Annette Black</p>
-          <p class="text-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique.
-          </p>
-          <img src="/images/home/social-icons.png" alt="Social Icons" />
-        </div>
-      </div>
-      <div class="our-team-content">
-        <div class="our-team-content-img">
-          <picture>
-            <source
-              media="(min-width: 768px)"
-              srcset="/images/home/our-team-desktop/member4-pc.png"
-            />
-            <img
-              src="/images/home/our-team-mobile/member4-sp.png"
-              alt="Savannah Nguyen"
-            />
-          </picture>
-        </div>
-        <div class="our-team-content-text">
-          <p class="name">Savannah Nguyen</p>
-          <p class="text-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros elementum tristique.
-          </p>
-          <img src="/images/home/social-icons.png" alt="Social Icons" />
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="subscribe-wrapper">
-    <h2>Subscribe to our newsletter</h2>
-    <p class="subscribe-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique.
-    </p>
-    <form id="subscribe-form">
-      <input type="text" name="email" />
-      <button type="submit">Sign Up</button>
-    </form>
-    <p class="subscribe-text-end">
-      By clicking Sign Up you're confirming that you agree with our Terms and
-      Conditions.
-    </p>
   </div>
 </BaseLayput>
 
 <style>
   /* main visaul */
   .main-visual-wrapper {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,11 +197,14 @@ import BaseLayput from "../layouts/BaseLayput.astro";
   }
 
   .main-visual-img img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
   }
 
   /* our team */
   .our-team-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -224,9 +230,6 @@ import BaseLayput from "../layouts/BaseLayput.astro";
     width: 100%;
   }
 
-  /* .our-team-content-text{
-    padding-bottom: ;
-  } */
   .our-team-content-text .name {
     font-size: 20px;
     font-weight: 600;
@@ -242,6 +245,8 @@ import BaseLayput from "../layouts/BaseLayput.astro";
 
   /* subscribe */
   .subscribe-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
     text-align: center;
     padding-top: 112px;
     padding-bottom: 112px;
@@ -292,13 +297,30 @@ import BaseLayput from "../layouts/BaseLayput.astro";
 
   @media screen and (min-width: 640px) {
     /* main visual */
+    .main-visual-container{
+    position: relative; 
+    }
+
     .main-visual-wrapper {
       flex-direction: row;
+      height: auto;
+    }
+
+    .main-visual-text{
+      display: flex;
+      justify-content: end;
+      width: 50%;
+      height: auto;
     }
 
     .main-visual-text-inner {
-      margin-left: 2.5rem;
-      margin-right: 1.5rem;
+      height: auto;
+      max-width: 640px;
+    }
+
+    .main-visual-img{
+      width: 50vw;
+      height: auto;
     }
   }
 
