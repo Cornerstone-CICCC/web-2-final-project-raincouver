@@ -121,6 +121,21 @@ import BaseLayput from "../layouts/BaseLayput.astro";
       </div>
     </div>
   </div>
+  <div class="subscribe-wrapper">
+    <h2>Subscribe to our newsletter</h2>
+    <p class="subscribe-text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+      varius enim in eros elementum tristique.
+    </p>
+    <form id="subscribe-form">
+      <input type="text" name="email" />
+      <button type="submit">Sign Up</button>
+    </form>
+    <p class="subscribe-text-end">
+      By clicking Sign Up you're confirming that you agree with our Terms and
+      Conditions.
+    </p>
+  </div>
 </BaseLayput>
 
 <style>
@@ -225,6 +240,56 @@ import BaseLayput from "../layouts/BaseLayput.astro";
     line-height: 24px;
   }
 
+  /* subscribe */
+  .subscribe-wrapper {
+    text-align: center;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .subscribe-wrapper h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .subscribe-text {
+    font-size: 18px;
+    line-height: 27px;
+    max-width: 768px;
+    margin: 0 auto 24px;
+  }
+
+  #subscribe-form {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  #subscribe-form input {
+    width: 60%;
+    padding: 12px 4px;
+  }
+
+  #subscribe-form button {
+    margin-left: 8px;
+    padding: 12px 24px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+  }
+
+  #subscribe-form button:hover {
+    cursor: pointer;
+  }
+
+  .subscribe-text-end {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+
   @media screen and (min-width: 640px) {
     /* main visual */
     .main-visual-wrapper {
@@ -265,6 +330,11 @@ import BaseLayput from "../layouts/BaseLayput.astro";
     .text-content {
       margin-left: 0;
       margin-right: auto;
+    }
+
+    /* subscribe */
+    #subscribe-form input {
+      width: 70%;
     }
   }
 </style>
