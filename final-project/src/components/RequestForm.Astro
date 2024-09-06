@@ -19,7 +19,7 @@
       <div class="form-group">
         <div>
             <span>Select service</span>
-        <select>
+            <select class="services-selector">
             <option></option>
           <option>One Bedroom Apartment</option>
           <option>Window Cleaning</option>
@@ -31,7 +31,7 @@
     </div>
     <div>
         <span>Select time</span>
-        <select>
+        <select class="time-selector">
             <option></option>
           <option>Morning</option>
           <option>Afternoon</option>
@@ -222,3 +222,45 @@
 }
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  
+  emailjs.init({
+    publicKey: "d6yRYWD_ovndPFsZp"  
+  });
+  document.querySelector('.submit-btn').addEventListener('click', function(event) {
+    event.preventDefault(); 
+    
+    const fullName = document.querySelector('input[type="text"]').value;
+    const phoneNumber = document.querySelector('input[type="tel"]').value;
+    const service = document.querySelector('.services-selector').value;
+    const time = document.querySelector('.time-selector').value;
+    const message = document.querySelector('.message-box').value;
+
+    if (!fullName || !phoneNumber || !service || !time || !message) {
+      alert('Please fill in all fields.');
+      return;
+    }
+    
+    if (!document.querySelector('#terms').checked) {
+      alert('Please accept the terms and conditions.');
+      return;
+    }
+    
+    emailjs.send('service_xcqy23m', 'template_bhx1hf7', {
+      full_name: fullName,
+      phone_number: phoneNumber,
+      service: service,
+      time: time,
+      message: message
+    }).then(function(response) {
+      console.log('Success:', response);
+      alert('Your message has been sent successfully!');
+    }, function(error) {
+      console.error('Error:', error);
+      alert('Failed to send your message. Please try again.');
+    });
+  });
+});
+</script>
