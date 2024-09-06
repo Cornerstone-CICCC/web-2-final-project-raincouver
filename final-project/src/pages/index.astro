@@ -1,127 +1,13 @@
 ---
+import MainVisual from "../components/MainVisual.astro";
+import OurTeam from "../components/OurTeam.astro";
 import BaseLayput from "../layouts/BaseLayput.astro";
 ---
 
 <BaseLayput>
-  <div class="main-visual-container">
-    <div class="main-visual-wrapper">
-      <div class="main-visual-text">
-        <div class="main-visual-text-inner">
-          <h3>
-            A Clean Home,<br />
-            A Happy Life,<br />
-            Let Us Handle the Dirty Work!
-          </h3>
-          <p>
-            We develop innovative design solutions that enable our clients to
-            enhance their competitive advantage.
-          </p>
-          <div class="main-visual-link">
-            <a href="/request" class="main-visual-link-quote">Request A Quote</a>
-            <a href="/ourservices" class="main-visual-link-learn">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="main-visual-img">
-        <img src="/images/home/main-visual.png" alt="Main Visual" />
-      </div>
-    </div>
-    <div class="our-team-wrapper" id="our-team">
-      <h2>Our Team</h2>
-      <p class="our-team-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-      <div class="our-team-content-wrapper">
-        <div class="our-team-content">
-          <div class="our-team-content-img">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="/images/home/our-team-desktop/member1-pc.png"
-              />
-              <img
-                src="/images/home/our-team-mobile/member1-sp.png"
-                alt="Leslie Alexander"
-              />
-            </picture>
-          </div>
-          <div class="our-team-content-text">
-            <p class="name">Leslie Alexander</p>
-            <p class="text-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius enim in eros elementum tristique.
-            </p>
-            <img src="/images/home/social-icons.png" alt="Social Icons" />
-          </div>
-        </div>
-        <div class="our-team-content">
-          <div class="our-team-content-img">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="/images/home/our-team-desktop/member2-pc.png"
-              />
-              <img
-                src="/images/home/our-team-mobile/member2-sp.png"
-                alt="Ralph Edwards"
-              />
-            </picture>
-          </div>
-          <div class="our-team-content-text">
-            <p class="name">Ralph Edwards</p>
-            <p class="text-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius enim in eros elementum tristique.
-            </p>
-            <img src="/images/home/social-icons.png" alt="Social Icons" />
-          </div>
-        </div>
-        <div class="our-team-content">
-          <div class="our-team-content-img">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="/images/home/our-team-desktop/member3-pc.png"
-              />
-              <img
-                src="/images/home/our-team-mobile/member3-sp.png"
-                alt="Annette Black"
-              />
-            </picture>
-          </div>
-          <div class="our-team-content-text">
-            <p class="name">Annette Black</p>
-            <p class="text-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius enim in eros elementum tristique.
-            </p>
-            <img src="/images/home/social-icons.png" alt="Social Icons" />
-          </div>
-        </div>
-        <div class="our-team-content">
-          <div class="our-team-content-img">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="/images/home/our-team-desktop/member4-pc.png"
-              />
-              <img
-                src="/images/home/our-team-mobile/member4-sp.png"
-                alt="Savannah Nguyen"
-              />
-            </picture>
-          </div>
-          <div class="our-team-content-text">
-            <p class="name">Savannah Nguyen</p>
-            <p class="text-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-              varius enim in eros elementum tristique.
-            </p>
-            <img src="/images/home/social-icons.png" alt="Social Icons" />
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="home-container">
+    <MainVisual />
+    <OurTeam />
     <div class="subscribe-wrapper">
       <h2>Subscribe to our newsletter</h2>
       <p class="subscribe-text">
@@ -141,108 +27,6 @@ import BaseLayput from "../layouts/BaseLayput.astro";
 </BaseLayput>
 
 <style>
-  /* main visaul */
-  .main-visual-wrapper {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  .main-visual-text {
-    width: 100%;
-    padding-top: 18px;
-    padding-bottom: 18px;
-  }
-
-  .main-visual-text h3 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48px;
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-
-  .main-visual-text p {
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 24px;
-  }
-
-  .main-visual-link a {
-    display: inline-block;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 12px 24px;
-    gap: 8px;
-  }
-
-  .main-visual-link-quote {
-    background-color: #000;
-    color: #fff;
-    border-radius: 5px;
-  }
-
-  .main-visual-link-learn {
-    color: #000;
-    border: 1px solid #000;
-    border-radius: 5px;
-  }
-
-  .main-visual-img {
-    display: block;
-    width: 100%;
-  }
-
-  .main-visual-img img {
-    width: 100%;
-    height: auto;
-  }
-
-  /* our team */
-  .our-team-wrapper {
-    max-width: 1280px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .our-team-wrapper h2 {
-    font-size: 48px;
-    font-weight: 700;
-  }
-
-  .our-team-text {
-    font-size: 18px;
-  }
-
-  .our-team-content-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .our-team-content {
-    margin-top: 32px;
-  }
-
-  .our-team-content-img img {
-    width: 100%;
-  }
-
-  .our-team-content-text .name {
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 20px;
-  }
-
-  .text-content {
-    width: 85%;
-    margin: 0 auto 20px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
   /* subscribe */
   .subscribe-wrapper {
     max-width: 1280px;
@@ -295,65 +79,7 @@ import BaseLayput from "../layouts/BaseLayput.astro";
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 640px) {
-    /* main visual */
-    .main-visual-container{
-    position: relative; 
-    }
-
-    .main-visual-wrapper {
-      flex-direction: row;
-      height: auto;
-    }
-
-    .main-visual-text{
-      display: flex;
-      justify-content: end;
-      width: 50%;
-      height: auto;
-    }
-
-    .main-visual-text-inner {
-      height: auto;
-      max-width: 640px;
-    }
-
-    .main-visual-img{
-      width: 50vw;
-      height: auto;
-    }
-  }
-
   @media screen and (min-width: 768px) {
-    /* our team */
-    .our-team-content-wrapper {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    .our-team-content {
-      width: 50%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-top: 48px;
-    }
-
-    .our-team-content-img {
-      width: 44%;
-    }
-
-    .our-team-content-text {
-      width: 56%;
-      text-align: left;
-      padding-left: 1.5rem;
-    }
-
-    .text-content {
-      margin-left: 0;
-      margin-right: auto;
-    }
-
     /* subscribe */
     #subscribe-form input {
       width: 70%;
@@ -361,24 +87,30 @@ import BaseLayput from "../layouts/BaseLayput.astro";
   }
 </style>
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  emailjs.init("d6yRYWD_ovndPFsZp");
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("d6yRYWD_ovndPFsZp");
 
-  document.getElementById('subscribe-form').addEventListener('submit', function(event) {
-      event.preventDefault(); 
+    document
+      .getElementById("subscribe-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
 
-      var email = document.getElementById('email').value;
+        var email = document.getElementById("email").value;
 
-      emailjs.send('service_xcqy23m', 'template_tt8uadc', {
-          to_email: email 
-      })
-      .then(function(response) {
-          console.log('Success:', response);
-          alert('Thank you for subscribing!'); 
-      }, function(error) {
-          console.log('Error:', error);
-          alert('Something went wrong. Please try again.'); 
+        emailjs
+          .send("service_xcqy23m", "template_tt8uadc", {
+            to_email: email,
+          })
+          .then(
+            function (response) {
+              console.log("Success:", response);
+              alert("Thank you for subscribing!");
+            },
+            function (error) {
+              console.log("Error:", error);
+              alert("Something went wrong. Please try again.");
+            }
+          );
       });
   });
-});
 </script>
