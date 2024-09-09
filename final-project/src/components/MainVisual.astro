@@ -1,0 +1,184 @@
+<div class="main-visual-wrapper">
+  <div class="main-visual-text">
+    <div class="main-visual-text-inner">
+      <h3>
+        A Clean Home,<br />
+        A Happy Life,<br />
+        Let Us Handle the Dirty Work!
+      </h3>
+      <p>
+        We develop innovative design solutions that enable our clients to
+        enhance their competitive advantage.
+      </p>
+      <div class="main-visual-link">
+        <a href="/request" class="main-visual-link-quote">Request A Quote</a>
+        <a href="/ourservices" class="main-visual-link-learn">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="main-visual-img">
+    <img src="/images/home/main-visual.png" alt="Main Visual" />
+  </div>
+</div>
+<form id="main-visual-request-form">
+  <div class="form-item">
+    <label for="name">Full name</label><input
+      type="text"
+      name="name"
+      id="name"
+    />
+  </div>
+  <div class="form-item">
+    <label for="tel">Phone Number</label><input
+      type="text"
+      name="tel"
+      id="tel"
+    />
+  </div>
+  <div class="form-item">
+    <label for="comment">Comment</label><input
+      type="text"
+      name="comment"
+      id="comment"
+    />
+  </div>
+  <div class="form-item">
+    <button type="submit">Request A Quote</button>
+  </div>
+</form>
+
+<style>
+  .main-visual-wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .main-visual-text {
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .main-visual-text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .main-visual-text p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 24px;
+  }
+
+  .main-visual-link a {
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 12px 24px;
+    gap: 8px;
+  }
+
+  .main-visual-link-quote {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  .main-visual-link-learn {
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+  }
+
+  .main-visual-img {
+    display: block;
+    width: 100%;
+  }
+
+  .main-visual-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  #main-visual-request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 48px 8px;
+  }
+
+  .form-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-item label {
+    font-size: 16px;
+  }
+
+  .form-item input {
+    margin-top: 8px;
+    padding: 12px;
+    border: 0.5px solid #000;
+    border-radius: 5px;
+  }
+
+  .form-item button {
+    color: #fff;
+    background-color: #000;
+    padding: 8px 20px;
+    border-radius: 5px;
+  }
+
+  .form-item button:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 640px) {
+    .main-visual-wrapper {
+      flex-direction: row;
+      height: auto;
+    }
+
+    .main-visual-text {
+      display: flex;
+      justify-content: end;
+      width: 50%;
+      height: auto;
+    }
+
+    .main-visual-text-inner {
+      height: auto;
+      max-width: 640px;
+    }
+
+    .main-visual-img {
+      width: 50vw;
+      height: auto;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    #main-visual-request-form {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .form-item:last-child {
+      justify-content: end;
+    }
+  }
+
+  @media screen and (min-width: 1260px) {
+    .form-item input {
+      width: 296px;
+    }
+  }
+</style>

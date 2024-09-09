@@ -1,0 +1,175 @@
+<div class="our-team-wrapper" id="our-team">
+  <h2>Our Team</h2>
+  <p class="our-team-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+  <div class="our-team-content-wrapper">
+    <div class="our-team-content">
+      <div class="our-team-content-img">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="/images/home/our-team-desktop/member1-pc.png"
+          />
+          <img
+            src="/images/home/our-team-mobile/member1-sp.png"
+            alt="Leslie Alexander"
+          />
+        </picture>
+      </div>
+      <div class="our-team-content-text">
+        <p class="name">Leslie Alexander</p>
+        <p class="text-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+        <img src="/images/home/social-icons.png" alt="Social Icons" />
+      </div>
+    </div>
+    <div class="our-team-content">
+      <div class="our-team-content-img">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="/images/home/our-team-desktop/member2-pc.png"
+          />
+          <img
+            src="/images/home/our-team-mobile/member2-sp.png"
+            alt="Ralph Edwards"
+          />
+        </picture>
+      </div>
+      <div class="our-team-content-text">
+        <p class="name">Ralph Edwards</p>
+        <p class="text-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+        <img src="/images/home/social-icons.png" alt="Social Icons" />
+      </div>
+    </div>
+    <div class="our-team-content">
+      <div class="our-team-content-img">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="/images/home/our-team-desktop/member3-pc.png"
+          />
+          <img
+            src="/images/home/our-team-mobile/member3-sp.png"
+            alt="Annette Black"
+          />
+        </picture>
+      </div>
+      <div class="our-team-content-text">
+        <p class="name">Annette Black</p>
+        <p class="text-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+        <img src="/images/home/social-icons.png" alt="Social Icons" />
+      </div>
+    </div>
+    <div class="our-team-content">
+      <div class="our-team-content-img">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="/images/home/our-team-desktop/member4-pc.png"
+          />
+          <img
+            src="/images/home/our-team-mobile/member4-sp.png"
+            alt="Savannah Nguyen"
+          />
+        </picture>
+      </div>
+      <div class="our-team-content-text">
+        <p class="name">Savannah Nguyen</p>
+        <p class="text-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+          varius enim in eros elementum tristique.
+        </p>
+        <img src="/images/home/social-icons.png" alt="Social Icons" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .our-team-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 48px 24px;
+  }
+
+  .our-team-wrapper h2 {
+    margin-top: 0;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .our-team-text {
+    font-size: 18px;
+  }
+
+  .our-team-content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .our-team-content {
+    margin-top: 32px;
+  }
+
+  .our-team-content-img img {
+    width: 100%;
+  }
+
+  .our-team-content-text .name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+
+  .text-content {
+    width: 85%;
+    margin: 0 auto 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .out-team-wrapper{
+      padding-bottom: 112px
+    }
+
+    .our-team-content-wrapper {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .our-team-content {
+      width: 50%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 48px;
+    }
+
+    .our-team-content-img {
+      width: 44%;
+    }
+
+    .our-team-content-text {
+      width: 56%;
+      text-align: left;
+      padding-left: 1.5rem;
+    }
+
+    .text-content {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+</style>

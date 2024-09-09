@@ -1,0 +1,87 @@
+<section class="about-us-wrapper">
+  <div class="about-us-main">
+    <div class="about-us-desctiption">
+      <p class="about-title">About Us</p>
+      <h3>Let us take care of all your cleaning service needs.</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Lo
+      </p>
+    </div>
+    <button class="request-button" onclick="location.href='/request'">Request a quote</button>
+  </div>
+  <div class="about-us-image">
+    <img src="../../public/images/about-us/man-working.png" alt="the image of a working man">
+  </div>
+</section>
+
+<style>
+  .about-us-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px;
+  }
+
+  .about-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .about-us-desctiption h3 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .about-us-desctiption p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .request-button {
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 25px 0;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+  }
+
+  .about-us-image {
+    margin-top: 20px;
+  }
+
+  .about-us-image img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  @media screen and (min-width: 912px) {
+    .about-us-wrapper {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 112px 64px;
+      gap: 80px;
+    }
+
+    .about-us-main {
+      width: 616px;
+    }
+
+    .about-us-desctiption h3 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .about-us-desctiption p {
+      font-size: 18px;
+    }
+
+    .about-us-image {
+      width: 616px;
+    }
+  }
+</style>

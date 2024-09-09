@@ -1,7 +1,124 @@
 ---
+import MainVisual from "../components/MainVisual.astro";
+import OurTeam from "../components/OurTeam.astro";
+import OurServices from "../components/OurServices.astro";
+import AboutUs from "../components/AboutUs.astro";
+import RequestForm from "../components/RequestForm.astro";
+import Help from "../components/Help.astro";
 import BaseLayput from "../layouts/BaseLayput.astro";
 ---
 
 <BaseLayput>
-<h1>Hello Raincouver!</h1>
+  <div class="home-container">
+    <MainVisual />
+    <OurServices />
+    <AboutUs />
+    <OurTeam />
+    <RequestForm />
+    <Help />
+    <div class="subscribe-wrapper">
+      <h2>Subscribe to our newsletter</h2>
+      <p class="subscribe-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique.
+      </p>
+      <form id="subscribe-form">
+        <input type="email" name="email" id="email" required />
+        <button type="submit">Sign Up</button>
+      </form>
+      <p class="subscribe-text-end">
+        By clicking Sign Up you're confirming that you agree with our Terms and
+        Conditions.
+      </p>
+    </div>
+  </div>
 </BaseLayput>
+
+<style>
+  /* subscribe */
+  .subscribe-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .subscribe-wrapper h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .subscribe-text {
+    font-size: 18px;
+    line-height: 27px;
+    max-width: 768px;
+    margin: 0 auto 24px;
+  }
+
+  #subscribe-form {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  #subscribe-form input {
+    width: 60%;
+    padding: 12px 4px;
+  }
+
+  #subscribe-form button {
+    margin-left: 8px;
+    padding: 12px 24px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+  }
+
+  #subscribe-form button:hover {
+    cursor: pointer;
+  }
+
+  .subscribe-text-end {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    /* subscribe */
+    #subscribe-form input {
+      width: 70%;
+    }
+  }
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("d6yRYWD_ovndPFsZp");
+
+    document
+      .getElementById("subscribe-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        var email = document.getElementById("email").value;
+
+        emailjs
+          .send("service_xcqy23m", "template_tt8uadc", {
+            to_email: email,
+          })
+          .then(
+            function (response) {
+              console.log("Success:", response);
+              alert("Thank you for subscribing!");
+            },
+            function (error) {
+              console.log("Error:", error);
+              alert("Something went wrong. Please try again.");
+            }
+          );
+      });
+  });
+</script>
